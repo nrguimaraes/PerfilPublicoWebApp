@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from modules.mongointerface import getMetricsByAuthor
+from app.modules.mongointerface import getMetricsByAuthor
 
 def getRelatedAuthorsByMetric(author,limit=10):
     reading_value = round(author["norm_Readibility_log"] * 100,2)
